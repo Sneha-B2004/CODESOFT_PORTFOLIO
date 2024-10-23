@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">-->
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </nav>
+        <div class="header-text">
+            <p>Portfolio</p>
+            <h1>Hi,I am <span>Sneha</span><br>and I am passionate<br><span>Web Developer</span></h1>
+        </div>
+    </div>
+</div>
+<!-- --------------about---------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/im.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I’m Sneha, a passionate web developer with a love for creating intuitive, user-focused solutions.I’m always eager to learn and grow, seeking out opportunities that push the boundaries of my creativity and technical know-how.</p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C</span></li>
+                        <li><span>python</span></li>
+                        <li><span>Java</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>MySQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tools">
+                    <ul>
+                        <li><span>Excel</span></li>
+                        <li><span>Tableau</span></li>
+                        <li><span>LaTeX</span></li>
+                        <li><span>Git</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Kendriya Vidyalaya (CBSE)</span><br>1st - 10th</li>
+                        <li><span>Deeksha (State)</span><br>11th - 12th</li>
+                        <li><span>Jawaharlal Nehru New College of Engineering</span><br>B.E</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificates">
+                    <ul>
+                        <li><span>Linkiden</span><br>Generative AI</li>
+                        <li><span>Udemy</span><br>Chat GPT Complete Guide</li>
+                        <li><span>Nptel</span><br>Data Structure in Java</li>
+                        <li><span>Great Learing</span><br>Data Structure in C</li>
+                        <li><span>Corsera</span><br>Python</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+<!----------------------Projects------------------->
+<section id="projects" style="text-align: right; padding: 10px 0;">
+    <h2 style="font-size: 3.7rem; color:white;margin-right: 50px;">Projects</h2>
+    <p style="font-size: 1.5rem; color: gray;margin-right: 50px;">Here are some of the projects I have worked on:</p>
+    <div style="margin-top: 20px; margin-right: 50px;">
+        <h3 style="font-size: 1.3rem;color: #ff004f;">Project 1: MERN Stack Web Application</h3>
+        <p style="font-size: 1.1rem;color: gray;">A web application built using MongoDB, Express, React, and Node.js that allows users to track their daily tasks.</p>
+        
+        <h3 style="font-size: 1.3rem;color: #ff004f;">Project 2: Responsive Portfolio Website</h3>
+        <p style="font-size: 1.1rem;color: gray;">A personal portfolio website designed using HTML, CSS, and JavaScript, showcasing my skills, projects, and contact information.</p>
+        
+        <h3 style="font-size: 1.3rem;color: #ff004f;">Project 3: Data Visualization with Tableau</h3>
+        <p style="font-size: 1.1rem;color: gray;">A project focused on creating interactive dashboards and reports using Tableau, visualizing key metrics and trends.</p>
+    </div>
+</section>
+
+
+<!----------------------Contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-user"></i>snehspoo@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/sneha.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©2024 Sneha All rights are reserved</p>
+    </div>
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+</body>
+</html>
